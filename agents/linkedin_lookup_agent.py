@@ -12,8 +12,8 @@ from tools.tools import get_profile_url_tavily
 
 def lookup_linkedin_profile(profile_name: str) -> str:
     llm = ChatOllama(
-        base_url="http://localhost:11434",
-        model="llama3.2:3b-instruct-q8_0",
+        base_url="http://ollama:11434",
+        model="phi4-mini",
         temperature=0,
     )
     template = """

@@ -22,8 +22,8 @@ if __name__ == "__main__":
     summary_prompt_template = PromptTemplate(input_variables=["information"],template=summary_template)
 
     llm = ChatOllama(
-        base_url="http://localhost:11434",
-        model = "llama3.2:3b-instruct-q8_0",  
+        base_url="http://ollama:11434",
+        model = "phi4-mini",  
         temperature = 0,
     )
 
